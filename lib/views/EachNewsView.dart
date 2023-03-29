@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:newsx/views/ArticleView.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 class EachNewsView extends StatelessWidget {
@@ -103,7 +104,7 @@ class EachNewsView extends StatelessWidget {
                 children: <Widget> [
                   ElevatedButton(
                       onPressed: () {
-                        print('Button clicked');
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => ArticleView(articleUrl: articleUrl)));
                       },
                       child: Text('Read More')
                   ),
