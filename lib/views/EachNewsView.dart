@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:transparent_image/transparent_image.dart';
 
 class EachNewsView extends StatelessWidget {
   String imageUrl;
@@ -24,12 +25,35 @@ class EachNewsView extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       child: Column (
         children: <Widget> [
-          Image.network (
-            imageUrl,
+          Container (
             height: 400.0,
             width: MediaQuery.of(context).size.width,
-            fit: BoxFit.cover,
-            alignment: Alignment.center,
+            child: Stack(
+                children: <Widget> [
+                  const Center(
+                      child: SizedBox(
+                        height: 100.0,
+                        width: 100.0,
+                        child: CircularProgressIndicator (
+                          strokeWidth: 10.0,
+                          color: Colors.blueAccent,
+                          backgroundColor: Colors.blueGrey,
+                        ),
+                      )
+                  ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(16.0),
+                    child: FadeInImage.memoryNetwork(
+                        height: 400.0,
+                        width: MediaQuery.of(context).size.width,
+                        placeholder: kTransparentImage,
+                        image: imageUrl,
+                        fit: BoxFit.cover,
+                        alignment: Alignment.center
+                    ),
+                  ),
+                ]
+            ),
           ),
           Padding(
             padding: const EdgeInsets.all(10.0),
@@ -50,7 +74,7 @@ class EachNewsView extends StatelessWidget {
               description,
                 maxLines: 4,
                 overflow: TextOverflow.ellipsis,
-              style: TextStyle (
+              style: const TextStyle (
                 fontSize: 12,
                 fontWeight: FontWeight.w300,
                 color: Colors.grey,
