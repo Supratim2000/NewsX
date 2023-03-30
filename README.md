@@ -28,8 +28,9 @@ For swaping up **PageView** widget is used and for showing the news inside the a
 
 ## Demo video link
 
-https://www.linkedin.com/posts/supratim-bhattacharjee-3b221a189_linkedinfamily-learning-flutterdeveloper-activity-7047150297973940224-J3-7?utm_source=share&utm_medium=member_desktop
+https://user-images.githubusercontent.com/52972176/228821359-ecccf96f-a47d-4471-b07b-ce37f01a1998.mp4
 
-## Application Download link for Android
+
+## Download link for Android
 
 https://drive.google.com/file/d/1smYOLiwPyIguYvFwyJw0KQTk0d5SHUmS/view?usp=sharing
