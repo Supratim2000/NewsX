@@ -13,5 +13,10 @@ This is a crossplatform news application built using Flutter where swiping up wi
 
 
 
-# Demo video link
+## Demo video link
+
 https://www.linkedin.com/posts/supratim-bhattacharjee-3b221a189_linkedinfamily-learning-flutterdeveloper-activity-7047150297973940224-J3-7?utm_source=share&utm_medium=member_desktop
+
+## Application Download link for Android
+
+https://drive.google.com/file/d/1zc_o1sOL-VJrMdIQiCRYhOc8CQnQ9sD2/view?usp=sharing
