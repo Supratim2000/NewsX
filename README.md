@@ -1,7 +1,9 @@
 # newsx
 
 ## About App
-This is a crossplatform news application built using **Flutter** where swiping up will result in fetching new news item and read more elivated button will open the news article using Webview. 🤠
+This is a cross platform news application built using **Flutter** where swiping up will result in fetching new news item and read more elivated button will open the news article using WebView. 🤠
+<br/>
+For swaping up **PageView** widget is used and for showing the news inside the app without redirecting to any web browser **WebView** widget is used and for fetching JSON response from NewsApi **http** dependency is used.
 
 
 ## Screenshots
