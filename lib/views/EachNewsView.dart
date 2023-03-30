@@ -106,7 +106,7 @@ class EachNewsView extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(context, MaterialPageRoute(builder: (context) => ArticleView(articleUrl: articleUrl)));
                       },
-                      child: Text('Read More')
+                      child: const Text('Read More')
                   ),
                 ],
               ),
